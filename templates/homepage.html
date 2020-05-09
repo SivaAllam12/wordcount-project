@@ -1,0 +1,10 @@
+<h1>This is our homepage for word counter</h1>
+<h2>Enter the text below</h2>
+<form action="{% url 'count' %}">
+<textarea name="text" rows="10" cols="40"></textarea><br>
+<br>
+<p style="color:red">{{message}}</p>
+<input type="Submit">
+</form>
+<br>
+<a href="{% url 'about' %}">About</a>
